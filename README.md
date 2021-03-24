@@ -16,7 +16,7 @@ To build a full-stack app our choice from scratch using a MERN (Mongoose, Expres
 
 Technologies Used:
 
-<b>Frontend:</b>
+<b>Front-end:</b>
 <ul>
 <li>HTML5</li>
 <li>JavaScript (ES6)</li>
@@ -26,7 +26,7 @@ Technologies Used:
 <li>React-Router</li>
 <li>Webpack</li>
 </ul>
-<b>Backend:</b>
+<b>back-end:</b>
 <ul>
 <li>Node.js</li>
 <li>Express</li>
@@ -58,7 +58,7 @@ Technologies Used:
 
 <b>The App:</b>
 
-*Stepladder* is a clone of popular jobs websites like Glassdoor. On the frontend, the user can sign up as a job-seeker, browse companies and jobs, post comments on company pages, and apply for roles. Alternatively, recruiters can sign-in and post jobs to companies that already exist or register a new company and post jobs to that. Depending on whether the user is a job-seeker or a company recruiter they will be able to do and see different things on the website. The frontend was built using React and Bulma. Behind the scenes the Stepladder webpage is powered by a CRUD API we built from scratch using Mongoose, MongoDB, Node.js and Express. The various user stories permitted on the frontend are made possible by the MVC-structured API on the backend. The functionality of the website was verified by writing and running a full-suite of tests written with Chai, Mocha, and Supertest. 
+*Stepladder* is a clone of popular jobs websites like Glassdoor. On the front-end, the user can sign up as a job-seeker, browse companies and jobs, post comments on company pages, and apply for roles. Alternatively, recruiters can sign-in and post jobs to companies that already exist or register a new company and post jobs to that. Depending on whether the user is a job-seeker or a company recruiter they will be able to do and see different things on the website. The front-end was built using React and Bulma. Behind the scenes the Stepladder webpage is powered by a CRUD API we built from scratch using Mongoose, MongoDB, Node.js and Express. The various user stories permitted on the front-end are made possible by the MVC-structured API on the back-end. The functionality of the website was verified by writing and running a full-suite of tests written with Chai, Mocha, and Supertest. 
 
 <b>Use the deployed version here:</b>
 
@@ -77,13 +77,13 @@ Technologies Used:
 ### _The Process_
 
 
-The basic idea of building a clone of Glassdoor was made jointly and quickly. The aim of this project was to showcase our recently-acquired knowledge of backend programming and demonstrate how API requests could be used to communicate between our database and our frontend interface. A jobs site with different accounts and permissions for different types of users and a database of companies and jobs was the perfect vehicle for test-driving these new skills.
+The basic idea of building a clone of Glassdoor was made jointly and quickly. The aim of this project was to showcase our recently-acquired knowledge of back-end programming and demonstrate how API requests could be used to communicate between our database and our front-end interface. A jobs site with different accounts and permissions for different types of users and a database of companies and jobs was the perfect vehicle for test-driving these new skills.
 
-We spent the first day brain-storming and whiteboarding out ideas for how the website would be structured on the frontend and the backend.
+We spent the first day brain-storming and whiteboarding out ideas for how the website would be structured on the front-end and the back-end.
 
 <img align = 'center' src='./client/scheme.png' >
 
-<i>An early blueprint for our frontend.</i>
+<i>An early blueprint for our front-end.</i>
 <br><br>
 Then we began thinking about how we would structure the development of the project. We decided to do the back-end jointly, by pair-programming. We did this because we knew version control would be a big issue and it was important that we started out knowing that our back-ends were all structured the same way so as to avoid facing problems further down the line. This was actually pretty painless -- it was all done within a day, leaving five full days to work on the front-end.
 We were keen to make sure that everyone did everything to avoid the siloing of skills and knowledge. At the same time, it made sense to split the work initially to get the skeleton of the website up and running. This meant that everyone took ownership of certain parts of the code--Vesna built the company registration page, Lydia built the job posting page, Tom built the navbar, and Clement did the jobs page--but then we all spent time revising, debugging, and restyling all the different parts of the website. Finally, we set aside a full day at the end of the project for building tests. To help streamline the development process we agreed at the beginning to use Bulma to build the various components. This helped standardize the look of the app and made it easier for us to read and tinker with each other's code.
@@ -96,7 +96,7 @@ Brilliantly! We worked well as a team and once we scored some early wins--like b
 
 ### _The Back-End
 
-Our back-end was built using Mongoose, MongoDB, Node.js, and Express. Essentially, we built our our CRUD API using a Model-View-Controller (MVC) pattern to structure the endpoints. At a very high level there were two basic data collections: users and companies. We had a model for a user and a model for a company, and then views and controllers for each kind.
+Our back-end was built using Mongoose, MongoDB, Node.js, and Express. Essentially, we built our CRUD API using a Model-View-Controller (MVC) pattern to structure the endpoints. At a very high level there were two basic data collections: users and companies. We had a model for a user and a model for a company, and then views and controllers for each kind.
 
 <i>Our user model</i>
 
@@ -243,7 +243,7 @@ All four groups could see and do slightly different things. For instance, a comp
 
 How did we do all this?
 
-At the heart of it was some logic on the login page. Here we used local storage so that when a user logged in a token generated on the backend would be passed through and saved in local storage. The token would be used to extract the user id and this would be used to fetch the user information from the back-end and then save the 'type' of user--job-seeker, admin, or moderator--in local storage, too. This information would then 'follow' the user around as they travelled through the site. When they logged out the local storage would be emptied and the token would be discarded. 
+At the heart of it was some logic on the login page. Here we used local storage so that when a user logged in a token generated on the back-end would be passed through and saved in local storage. The token would be used to extract the user id and this would be used to fetch the user information from the back-end and then save the 'type' of user--job-seeker, admin, or moderator--in local storage, too. This information would then 'follow' the user around as they travelled through the site. When they logged out the local storage would be emptied and the token would be discarded. 
 
 <i>The code on the login where the token would be recorded in local and storage, along with the type of user logged in:</i>
 
