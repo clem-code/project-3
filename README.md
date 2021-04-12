@@ -415,5 +415,9 @@ Ultimately we had a suite of ten tests. Building them was a fantastic learning e
 * If we had more time we would have fleshed out the job application process so that email confirmations would have been sent when a job-seeker clicked 'Submit' on the job application page.
 * We ran out of time before we could add to the user profile. It would be nice to make that more in-depth by adding profile photos and about me sections.
 
+### _Key Takeaways_
+
+For me building my first full-stack app was a big deal. Learning how to build a server and client and then make them interact with each other was an amazing experience. A big lesson from this experience was learning the importance of code layout. Having clean, structured code, in sensibly named files made this project work. Without that I would have got lost so many times!
+On the technical side, I learnt a lot about testing: how to plan them, how to structure them, and how to run them! I also got an insight into why Test Driven Development is such a good idea: it gives you a roadmap for building an app and forces you to think through what you want your app to do!
 
 
